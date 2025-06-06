@@ -1,0 +1,2 @@
+# MANAGEMART_ANDROID_APPLICATION
+ ManageMart is a smart inventory management Android app designed to simplify business operations. It allows users to manage suppliers, track inventory, monitor sales and profit, and visualize key analytics through interactive graphs. With features like Excel/PDF export, real-time stock alerts, and secure login, ManageMart offers a complete and user-friendly solution for small and medium businesses.
