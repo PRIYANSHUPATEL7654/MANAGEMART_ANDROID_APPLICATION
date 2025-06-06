@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.MANAGEMART" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+         <item name="colorPrimary">#2979ff</item>
+         <item name="textInputStyle">@style/Widget.ManageMart.TextInputLayout</item>
+         <item name="editTextColor">@color/white</item>
+
+    </style>
+    <style name="Widget.ManageMart.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="startIconTint">@color/white</item>
+    </style>
+
+    <style name="MyDatePickerTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="materialCalendarTheme">@style/MyCalendarTheme</item>
+    </style>
+
+    <!-- Calendar Style for Light Mode -->
+    <style name="MyCalendarTheme" parent="Widget.MaterialComponents.MaterialCalendar">
+        <item name="colorOnSurface">#FFFFFF</item> <!-- Text color -->
+        <item name="colorSurface">#000000</item>   <!-- Background color -->
+    </style>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    android:backgroundTint="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="#F9F9F9">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name:"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/simplified_itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Demo Item"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Date:"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/simplified_orderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 Apr 2025"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Purchase Price (₹):"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/simplified_totalPurchasePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="155.0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Selling Price (₹):"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/simplified_totalSellingPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200.0"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

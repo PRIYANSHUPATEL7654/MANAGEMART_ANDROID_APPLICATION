@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/floatingActionButton"
+        android:icon="@drawable/ic_plus"
+        android:enabled="true"
+        android:title="Add"/>
+
+    <item
+        android:id="@+id/stats"
+        android:icon="@drawable/ic_stats"
+        android:title="Stats" />
+
+</menu>

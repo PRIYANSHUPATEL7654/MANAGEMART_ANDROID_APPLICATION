@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Blue DatePickerDialog Theme for Dark Mode -->
+    <style name="BlueDatePickerDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">#2979FF</item>
+    </style>
+</resources>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InventoryFragment">
+
+
+
+    <!-- TabLayout for switching between Purchase History & Inventory Monitor -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/darkblue"
+        app:tabSelectedTextColor="@color/darkblue"
+        app:tabTextColor="@android:color/darker_gray">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabPurchaseHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Purchase History" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabInventoryMonitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inventory Monitor" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- ViewPager2 for swiping between fragments -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</LinearLayout>

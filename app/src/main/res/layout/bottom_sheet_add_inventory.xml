@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Item"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:paddingBottom="8dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Import Excel"
+            android:paddingTop="3dp"
+            android:textSize="16sp"/>
+        <ImageView
+            android:id="@+id/importExcelBtn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end"
+            android:src="@android:drawable/ic_menu_upload"
+            android:contentDescription="Import Excel"
+            app:tint="@color/darkblue"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+    <!-- Item Name -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Item Category -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Category">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/itemCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Supplier Name -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Supplier Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/supplierName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Purchase Price -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Purchase Price">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/purchasePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Selling Price (MRP) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selling Price (MRP)">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sellingPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Transportation Cost -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Transportation Cost">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/transportationCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Date Picker for Order Date -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Order Date">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:focusable="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Quantity Selector -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/decreaseQuantity"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:backgroundTint="@color/darkblue"
+            android:textColor="@color/white"
+            android:contentDescription="Decrease Quantity" />
+
+        <TextView
+            android:id="@+id/quantityText"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="1"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/increaseQuantity"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:backgroundTint="@color/darkblue"
+            android:textColor="@color/white"
+            android:contentDescription="Increase Quantity" />
+    </LinearLayout>
+
+    <!-- Unit Dropdown -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Select Unit">
+
+        <Spinner
+            android:id="@+id/unitSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:spinnerMode="dropdown" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Save Item Button -->
+    <Button
+        android:id="@+id/saveItemBtn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:text="Save Item"
+        android:backgroundTint="@color/darkblue"
+        android:layout_marginBottom="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:cornerRadius="28dp" />
+</LinearLayout>

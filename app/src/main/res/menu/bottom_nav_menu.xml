@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_inventory"
+        android:title="Inventory"
+        android:icon="@mipmap/inventory" />
+
+    <item
+        android:id="@+id/nav_sales"
+        android:title="Sales"
+        android:icon="@drawable/ic_trans" />
+
+    <item
+        android:id="@+id/nav_analysis"
+        android:title="Analysis"
+        android:icon="@mipmap/analysis" />
+
+    <item
+        android:id="@+id/nav_suppliers"
+        android:title="Suppliers"
+        android:icon="@mipmap/suppliers" />
+</menu>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="head_blue">#F54B4B69</color>
+    <color name="grey">#27FDFDFF</color>
+    <color name="darkblue">#2979FF</color>
+<!--    <color name="darkblue">#0A3764</color>901EF4-->
+    <color name="green">#4AD108</color>
+    <color name="blue">#00b7eb</color>
+    <color name="textColor">#353535</color>
+    <color name="greenColor">#4caf50</color>
+    <color name="redColor">#f44336</color>
+    <color name="colorCash">#ff8c00</color> <!-- Example color for Cash -->
+    <color name="colorCheque">#26A69A</color> <!-- Example color for Cheque -->
+    <color name="colorNetBanking">#32cd32</color> <!-- Example color for NetBanking -->
+    <color name="colorOther">#ff00ff</color> <!-- Example color for Other -->
+    <!--    <color name="grey">#2A05052D</color>-->
+    <color name="search_hint_color">#000000</color> <!-- black -->
+    <color name="box_stroke_color">#000000</color>
+</resources>
